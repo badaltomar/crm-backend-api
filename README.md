@@ -35,7 +35,7 @@ The API is designed to reflect **real-world backend development practices**, inc
 
 ## 🌐 API Base URL
 
-
+https://crm-backend-api-sigma.vercel.app/
 
 ---
 
@@ -127,7 +127,7 @@ Supports:
 
 Clone the repo  
 ```bash
-git clone <repository-url>
+git clone https://github.com/badaltomar/crm-backend-api
 cd eterris-backend
 npm install
 npm run dev
