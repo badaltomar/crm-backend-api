@@ -45,6 +45,17 @@ router.get("/", async (req, res) => {
   }
 });
 
+// GET /leads/:leadId (Single Lead)
+router.get("/:leadId", async (req, res) => {
+  try {
+    const lead = await Lead.findById(req.params.leadId).populate("agent");
+    if (!lead) return res.status(404).json({ message: "Lead not found" });
+    res.status(200).json(lead);
+  } catch (error) {
+    res.status(500).json({ message: "Error fetching lead", error: error.message });
+  }
+});
+
 // POST /leads
 router.post("/", async (req, res) => {
   try {
