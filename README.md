@@ -77,6 +77,7 @@ https://crm-backend-api-sigma.vercel.app/
 | Method | Endpoint | Description |
 |------|--------|------------|
 | GET | `/leads` | Fetch leads with filters & sorting |
+| GET | `/leads/:leadId` | Fetch lead by _id |
 | POST | `/leads` | Create a new lead |
 | PATCH | `/leads/:leadId` | Update lead details |
 | DELETE | `/leads/:leadId` | Delete a lead |
